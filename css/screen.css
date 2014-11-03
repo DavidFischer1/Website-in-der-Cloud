@@ -1,0 +1,133 @@
+
+/* -- Allgemeines -- */
+body {
+  background: url(../img/bg.gif) #e7f3f7; 
+  color: black;
+  margin: 0;
+  padding: 1%; 
+  min-width: 640px; 
+  font-size: 100.01%; 
+  font-family: verdana, arial, sans-serif ;
+}
+a { color: #0B4D8C; text-decoration: underline; } 
+a:visited { color: black; } 
+.skip { 
+  position: absolute;
+  margin-left: -999px;
+  width: 990px;
+}
+h1 { 
+  font-size: 2.7em;
+  font-weight: normal;
+  line-height: 0.8em;
+  padding: 0.6em 0 0.2em 2%;
+  margin: 0;
+  border-bottom: 1px dashed #E6E6FA;
+}
+h2, h3, h4 { font-weight: normal; }
+h1, h2, h3, h4, h5, h6 { 
+  color: #6699CC;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+img { 
+  border: solid 1px #aaa;
+  padding: 1px;
+  max-width: 95%; 
+}
+.fleft { 
+  float: left;
+  margin: 0 1em 0.2em 0; 
+}
+.fright {
+  float: right;
+  margin: 0 0 0.2em 1em;
+  padding: 1px;
+}
+
+
+/* -- Layoutspezifisches -- */
+#container { 
+  font-size: 0.8em; 
+  max-width: 70em; 
+  margin: auto; 
+  border: 1px solid #aaa; 
+  border-top: 0; 
+  background: white;
+}
+#footer {
+  clear: both; 
+  padding: 0 20px;
+}
+
+
+#logo {
+  background: url(../img/blume.jpg) 0 0 no-repeat black; 
+  height: 64px; 
+  padding: 0 20px;
+  text-align: right;
+  line-height: 54px;
+  font-size: 54px; 
+  overflow: hidden;
+  letter-spacing: -3px; 
+  margin: 0; 
+}
+#logo a {
+  color: white; /* Die vorher eingestellte Farbe passt nicht um auch als Logofarbe zu dienen, deshalb wδhlen wir hier weiί. */
+  text-decoration: none;
+}
+#logo a span { /* Der letzte Buchstabe soll invertiert dargestellt werden. */
+  color: black;
+  background: white;
+  padding-right: 0.1em; /* Ein Hack, damit das weiίe rechts und links genau so breit ist. */
+  font-weight: bold;
+}
+
+/* - Menό - */
+#menu {
+  background: url(../img/wechselschatten.png) #287635;
+  padding: 5px 5%; /* Je kleiner das Fenster desto kleiner soll auch der Abstand des Menόs rechts und links sein. */
+  margin: 0;
+  text-align: right;
+  color: yellow; /* Hier definieren wir die Farbe des Menόpunktes, der kein Link ist, also den Menόpunkt der Seite auf der wir uns gerade befinden. */
+}
+#menu li {
+  font-size: 1.2em;
+  display: inline; /* Damit die Menόpunkte nebeneinander und nicht untereinander erscheinen. */
+  list-style-type: none; /* Die Bullets vor den Menόpunkten schalten wir ab. */
+  border-left: 1px solid white; /* Ein optischer Trennungsstrich */
+  padding: 0 10px 0 15px;
+  font-weight: bold;
+}
+#menu li a {
+  color: white; /* Hier ist das mit der Linkfarbe genau so, sie soll weiί sein. */
+  text-decoration: none;
+}
+
+/* - Subnavigation, Rechte Spalte - */
+#subnav {
+  width: 26%; /* Je kleiner das Fenster desto kleiner soll auch die Breite der Subnavigation werden, damit immer genόgend Platz fόr den richtigen Inhalt bleibt. */
+  min-width: 10em; /* Damit uns die Subnavigarion nicht zu sehr zusammengeschoben wird. */
+  float: right; /* Damit erreichen wir dass der Inhalt links neben der Subnavigation vorbeiflieίt und nicht erst unten drunter anfδngt. */
+  padding: 70px 1% 1em 1%;
+  margin: 1em 1% 0 1%;
+  border-left: 1px dotted #aaa; /* Hiermit trennen wir optisch die Subnavigation vom eigentlichen Inhalt ab. */
+  font-size: 0.9em; /* Die Schriftgrφίe setzen wir hier ein wenig herunter damit erkennbar wird dass das Informationen zweiter Rangordnung sind. */
+}
+#subnav dt { /* Die einzelnen άberschriften in der Subnavigation */
+  font-size: 1.2em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 0.5em;
+  margin-top: 1em;
+  border-top: 1px dotted #aaa; /* Hier eine optische Trennungslinie zwischen den einzelnen Bereichen der Subnavigation. */
+}
+#subnav dd { /* Die Unterpunkte der Subnavigation. */
+  padding: 0;
+  margin: 0.2em 0;
+}
+
+/* - Der Hauptinhaltsteil - */
+#main {
+  background: url(../img/blaue-blume.png) no-repeat 100% 0 white; /* Die kleine, blaue, halbdurchsichtige Blume wird als Hintergrundbild, welches rechts oben in der Ecke steht, definiert. */
+  padding: 0 31% 0 20px; /* Der rechte Abstand (31%) stellt sicher, dass auch nach dem Umflieίen der Subnavigation der Text genau so breit wird wie oben und ein zwei-Spalten Eindruck entsteht. */
+  line-height: 1.5em; /* Zur besseren Lesbarkeit erhφhen wir die Zeilenhφhe. */
+}
